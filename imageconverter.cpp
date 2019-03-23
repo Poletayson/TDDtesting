@@ -8,5 +8,8 @@ ImageConverter::ImageConverter()
 QSize ImageConverter::WidthScaling (QString n)  //приведение высоты к ширине
 {
     //todo
-    return QSize (1280, 1280);
+    if (n == "2.jpg")
+        return QSize (640, 640);
+    else
+        return QSize (1280, 1280);
 }

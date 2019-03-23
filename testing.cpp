@@ -16,3 +16,5 @@ void Testing::test_WidthScaling ()  //тестирование масштаби�
     QCOMPARE(obj->WidthScaling ("1.jpg"), QSize (1280, 1280));
     QCOMPARE(obj->WidthScaling ("2.jpg"), QSize (640, 640));
 }
+
+QTEST_APPLESS_MAIN(Testing)

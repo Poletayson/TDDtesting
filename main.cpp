@@ -11,4 +11,4 @@
 //    return a.exec();
 //}
 
-QTEST_APPLESS_MAIN(Testing)
+
