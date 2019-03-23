@@ -1,3 +1,4 @@
+#include <imageconverter.h>
 #include <QtTest>
 #ifndef TESTING_H
 #define TESTING_H
@@ -10,11 +11,11 @@ public:
     ImageConverter* obj;
     Testing();
 private slots:
-    void test_ClassCreare ();     //тест на создание класса
+    void test_ClassCreate ();     //тест на создание класса
 
 };
 
-QTEST_APPLESS_MAIN(Testing)
+//QTEST_APPLESS_MAIN(Testing)
 
 #endif // TESTING_H
 //#include "testing.moc"
