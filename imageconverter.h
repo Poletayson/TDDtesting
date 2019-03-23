@@ -9,6 +9,7 @@ class ImageConverter
 public:
     ImageConverter();
     QSize WidthScaling (QString n);
+    QSize HeightScaling (QString n);
 };
 
 #endif // IMAGECONVERTER_H

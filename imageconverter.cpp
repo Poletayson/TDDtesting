@@ -13,3 +13,9 @@ QSize ImageConverter::WidthScaling (QString n)  //приведение высо�
     else
         return QSize (1280, 1280);
 }
+
+QSize ImageConverter::HeightScaling (QString n)  //приведение ширины к высоте
+{
+    //todo
+    return QSize (874, 874);
+}
