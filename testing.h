@@ -13,6 +13,7 @@ public:
 private slots:
     void test_ClassCreate ();     //тест на создание класса
     void test_WidthScaling ();     //тестирование масштабирования по ширине
+    void test_HeightScaling ();     //тестирование масштабирования по высоте. Ширина становится равной высоте
 };
 
 //QTEST_APPLESS_MAIN(Testing)
