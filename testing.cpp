@@ -11,6 +11,11 @@ void Testing::test_ClassCreate ()     //тест на создание клас�
     QVERIFY(ptr != Q_NULLPTR);
 }
 
+void Testing::test_Open ()              //тестирование открытия файла. Проверяется формат
+{
+    QCOMPARE(obj->Open ("1.jpg"), "jpg");
+}
+
 void Testing::test_WidthScaling ()  //тестирование масштабирования по ширине
 {
     QCOMPARE(obj->WidthScaling ("1.jpg"), QSize (1280, 1280));
