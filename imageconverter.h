@@ -8,6 +8,7 @@ class ImageConverter
 {
 public:
     ImageConverter();
+    QSize WidthScaling (QString n);
 };
 
 #endif // IMAGECONVERTER_H

@@ -12,7 +12,7 @@ public:
     Testing();
 private slots:
     void test_ClassCreate ();     //тест на создание класса
-    void test_WidthScaling ();     //тест масштабирования по ширине
+    void test_WidthScaling ();     //тестирование масштабирования по ширине
 };
 
 //QTEST_APPLESS_MAIN(Testing)
