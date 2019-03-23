@@ -20,6 +20,7 @@ void Testing::test_WidthScaling ()  //тестирование масштаби�
 void Testing::test_HeightScaling ()     //тестирование масштабирования по высоте. Ширина становится равной высоте
 {
     QCOMPARE(obj->HeightScaling ("1.jpg"), QSize (874, 874));
+    QCOMPARE(obj->HeightScaling ("2.jpg"), QSize (640, 640));
 }
 
 QTEST_APPLESS_MAIN(Testing)
