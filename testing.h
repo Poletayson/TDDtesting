@@ -7,8 +7,10 @@ class Testing : public QObject
 {
     Q_OBJECT
 public:
+    ImageConverter* obj;
     Testing();
 private slots:
+    void test_ClassCreare ();     //тест на создание класса
 
 };
 
