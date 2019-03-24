@@ -17,7 +17,10 @@ QString ImageConverter::Open (QString n)
 QString ImageConverter::Save (QImage* im, QString f)
 {
     //todo
-    return "jpg";
+    if (f == "jpg")
+        return f;
+    else
+        return "png";
 }
 
 QSize ImageConverter::WidthScaling (QString n)  //приведение высоты к ширине
