@@ -20,6 +20,7 @@ void Testing::test_Save()               //тестирование сохран�
 {
     QImage* ptr = new QImage ("1.jpg");
     QCOMPARE(obj->Save (ptr, "jpg"), "jpg");
+    QCOMPARE(obj->Save (ptr, "png"), "png");
 }
 
 void Testing::test_WidthScaling ()  //тестирование масштабирования по ширине
