@@ -16,6 +16,11 @@ void Testing::test_Open ()              //тестирование открыт�
     QCOMPARE(obj->Open ("1.jpg"), "jpg");
     QCOMPARE(obj->Open ("4.png"), "png");
 }
+void Testing::test_Save()               //тестирование сохранения файла
+{
+    QImage* ptr = new QImage ("1.jpg");
+    QCOMPARE(obj->Save (ptr, "jpg"), "jpg");
+}
 
 void Testing::test_WidthScaling ()  //тестирование масштабирования по ширине
 {
