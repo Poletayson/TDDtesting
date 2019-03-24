@@ -14,6 +14,7 @@ void Testing::test_ClassCreate ()     //тест на создание клас�
 void Testing::test_Open ()              //тестирование открытия файла. Проверяется формат
 {
     QCOMPARE(obj->Open ("1.jpg"), "jpg");
+    QCOMPARE(obj->Open ("4.png"), "png");
 }
 
 void Testing::test_WidthScaling ()  //тестирование масштабирования по ширине
