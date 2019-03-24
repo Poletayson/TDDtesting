@@ -8,6 +8,7 @@ class ImageConverter
 {
 public:
     ImageConverter();
+    QString Open (QString n);
     QSize WidthScaling (QString n);
     QSize HeightScaling (QString n);
 };

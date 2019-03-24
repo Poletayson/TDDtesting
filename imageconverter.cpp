@@ -5,6 +5,12 @@ ImageConverter::ImageConverter()
 
 }
 
+QString ImageConverter::Open (QString n)
+{
+    //todo
+        return "jpg";
+}
+
 QSize ImageConverter::WidthScaling (QString n)  //приведение высоты к ширине
 {
     //todo
