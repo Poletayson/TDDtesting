@@ -15,6 +15,7 @@ void Testing::test_Open ()              //тестирование открыт�
 {
     QCOMPARE(obj->Open ("1.jpg"), "jpg");
     QCOMPARE(obj->Open ("4.png"), "png");
+    QCOMPARE(obj->Open ("2.jpg"), "jpg");
 }
 void Testing::test_Save()               //тестирование сохранения файла
 {
