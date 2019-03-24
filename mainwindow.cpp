@@ -20,9 +20,10 @@ void MainWindow::on_pushButtonOpen_clicked()    //открыть
 
     QString fileName = QFileDialog::getOpenFileName(this, "Выберите входной файл", path);
     Ic.Open(fileName);
-    //ui->label
-
-
+    if (!Ic.img->isNull())
+        ui->label->setText(fileName);
+    else
+        ui->label->setText("error");
 }
 
 void MainWindow::on_pushButtonJpg_clicked()
