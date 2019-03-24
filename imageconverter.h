@@ -11,6 +11,7 @@ public:
     QString Open (QString n);
     QSize WidthScaling (QString n);
     QSize HeightScaling (QString n);
+    QString Save (QImage* im, QString f);
 };
 
 #endif // IMAGECONVERTER_H
