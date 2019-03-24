@@ -8,10 +8,19 @@ ImageConverter::ImageConverter()
 QString ImageConverter::Open (QString n)
 {
     //todo
-    if (n == "1.jpg")
-        return "jpg";
-    else
-        return "png";
+    img = new QImage (n);
+    if (!img->isNull())
+    {
+        QStringList ptrL = n.split(".");
+        return ptrL.last();
+
+    }
+
+
+//    if (n == "1.jpg")
+//        return "jpg";
+//    else
+//        return "png";
 }
 
 QString ImageConverter::Save (QImage* im, QString f)

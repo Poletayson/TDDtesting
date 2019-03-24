@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QSize>
+#include <QImage>
 
 class ImageConverter
 {
