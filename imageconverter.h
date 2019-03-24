@@ -7,6 +7,7 @@
 class ImageConverter
 {
 public:
+    QImage* img;
     ImageConverter();
     QString Open (QString n);
     QSize WidthScaling (QString n);
