@@ -38,12 +38,12 @@ QSize ImageConverter::WidthScaling ()  //приведение высоты к ш
         return QSize (1280, 1280);
 }
 
-QSize ImageConverter::HeightScaling (QString n)  //приведение ширины к высоте
+QSize ImageConverter::HeightScaling ()  //приведение ширины к высоте
 {
     //todo
-    if (n == "1.jpg")
+//    if (n == "1.jpg")
         return QSize (874, 874);
-    else
-        return QSize (640, 640);
+//    else
+//        return QSize (640, 640);
 
 }
