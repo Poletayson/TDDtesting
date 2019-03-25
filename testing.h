@@ -20,8 +20,10 @@ private slots:
     void test_SaveErr ();
     void test_WidthScaling ();     //тестирование масштабирования по ширине
     void test_HeightScaling ();     //тестирование масштабирования по высоте. Ширина становится равной высоте
-    void test_WidthScaling2 ();     //тестирование масштабирования по ширине
-    void test_HeightScaling2 ();     //тестирование масштабирования по высоте. Ширина становится равной высоте
+    void test_WidthScaling2 ();
+    void test_HeightScaling2 ();
+    void test_WidthScalingErr ();
+    void test_HeightScalingErr();
 };
 
 //QTEST_APPLESS_MAIN(Testing)

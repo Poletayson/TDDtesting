@@ -58,5 +58,16 @@ void Testing::test_HeightScaling2 ()     //тестирование масшта
     obj->img = new QImage ("2.jpg");
     QCOMPARE(obj->HeightScaling (), QSize (640, 640));
 }
+void Testing::test_WidthScalingErr()   //тестирование масштабирования по ширине
+{
+    obj->img = new QImage ("2222.jpg");
+    QCOMPARE(obj->WidthScaling (), QSize (0, 0));
+}
+
+void Testing::test_HeightScalingErr()     //тестирование масштабирования по высоте. Ширина становится равной высоте
+{
+    obj->img = new QImage ("222.jpg");
+    QCOMPARE(obj->HeightScaling (), QSize (0, 0));
+}
 
 QTEST_APPLESS_MAIN(Testing)
