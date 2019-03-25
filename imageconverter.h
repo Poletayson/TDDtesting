@@ -13,7 +13,7 @@ public:
     QImage* img;
     ImageConverter();
     QString Open (QString n);
-    QSize WidthScaling (QString n);
+    QSize WidthScaling ();
     QSize HeightScaling (QString n);
     QString Save (QImage* im, QString f);
 };

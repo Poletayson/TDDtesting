@@ -29,12 +29,12 @@ QString ImageConverter::Save (QImage* im, QString f)
     else return "";
 }
 
-QSize ImageConverter::WidthScaling (QString n)  //приведение высоты к ширине
+QSize ImageConverter::WidthScaling ()  //приведение высоты к ширине
 {
     //todo
-    if (n == "2.jpg")
-        return QSize (640, 640);
-    else
+//    if (n == "2.jpg")
+//        return QSize (640, 640);
+//    else
         return QSize (1280, 1280);
 }
 
