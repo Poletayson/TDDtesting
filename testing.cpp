@@ -26,6 +26,7 @@ void Testing::test_Save()               //тестирование сохран�
     QCOMPARE(obj->Save (ptr, path+"/tst.png"), "png");
 }
 
+
 void Testing::test_SaveErr()               //тестирование сохранения файла
 {
     QImage* ptr = new QImage ("132637.jpg");

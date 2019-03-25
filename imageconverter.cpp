@@ -27,6 +27,7 @@ QString ImageConverter::Save (QImage* im, QString f)
         QStringList ptrL = f.split(".");
         return ptrL.last();
     }
+    else return "";
 }
 
 QSize ImageConverter::WidthScaling (QString n)  //приведение высоты к ширине
