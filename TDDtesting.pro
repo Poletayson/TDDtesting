@@ -31,11 +31,13 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    testing.cpp
+    testing.cpp \
+    imageconverter.cpp
 
 HEADERS += \
         mainwindow.h \
-    testing.h
+    testing.h \
+    imageconverter.h
 
 FORMS += \
         mainwindow.ui
