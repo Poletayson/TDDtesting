@@ -28,10 +28,13 @@ void MainWindow::on_pushButtonOpen_clicked()    //открыть
 
 void MainWindow::on_pushButtonJpg_clicked()
 {
-    QString path = QApplication::applicationDirPath();  //QDir::currentPath();      //текущая директория
-    QString file_name = QFileDialog::getSaveFileName(this, "Сохранить", path, "(*.jpg)");
 
+    Ic.Save(Ic.img, "jpg");
 
+    QString path = QDir::currentPath();  //QDir::currentPath();      //текущая директория
+    QString file_name = QFileDialog::getSaveFileName(Q_NULLPTR, "Сохранить", path, "(*.jpg)");
+
+            //im->save(file_name);
     //file_name += ".jpg";
 
 //    QPixmap pix_map = QPixmap::grabWidget(ui->widget);

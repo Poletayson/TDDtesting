@@ -1,6 +1,8 @@
 #include <imageconverter.h>
 #include <QtTest>
 #include <QImage>
+#include <QDir>
+#include <QFileDialog>
 #ifndef TESTING_H
 #define TESTING_H
 

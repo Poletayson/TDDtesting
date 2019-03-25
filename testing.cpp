@@ -21,14 +21,16 @@ void Testing::test_Open ()              //тестирование открыт�
 void Testing::test_Save()               //тестирование сохранения файла
 {
     QImage* ptr = new QImage ("1.jpg");
-    QCOMPARE(obj->Save (ptr, "jpg"), "jpg");
-    QCOMPARE(obj->Save (ptr, "png"), "png");
+    QString path = QDir::currentPath();     //текущая директория
+    QCOMPARE(obj->Save (ptr, path+"/tst.jpg"), "jpg");
+    QCOMPARE(obj->Save (ptr, path+"/tst.png"), "png");
 }
 
 void Testing::test_SaveErr()               //тестирование сохранения файла
 {
     QImage* ptr = new QImage ("132637.jpg");
-    QCOMPARE(obj->Save (ptr, "jpg"), "");
+    QString path = QDir::currentPath();     //текущая директория
+    QCOMPARE(obj->Save (ptr, path+"/tst.jpg"), "");
 }
 
 void Testing::test_WidthScaling ()  //тестирование масштабирования по ширине

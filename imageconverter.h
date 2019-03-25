@@ -4,6 +4,8 @@
 #include <QObject>
 #include <QSize>
 #include <QImage>
+#include <QDir>
+#include <QFileDialog>
 
 class ImageConverter
 {
