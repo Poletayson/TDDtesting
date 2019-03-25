@@ -2,7 +2,7 @@
 
 ImageConverter::ImageConverter()
 {
-
+    img = new QImage ();
 }
 
 QString ImageConverter::Open (QString n)
@@ -31,14 +31,12 @@ QString ImageConverter::Save (QImage* im, QString f)
 
 QSize ImageConverter::WidthScaling ()  //приведение высоты к ширине
 {
-    //todo
     img = new QImage(img->scaled(img->width(), img->width()));
     return img->size();
 }
 
 QSize ImageConverter::HeightScaling ()  //приведение ширины к высоте
 {
-    //todo
     img = new QImage(img->scaled(img->height(), img->height()));
     return img->size();
 }

@@ -15,7 +15,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButtonOpen_clicked()    //открыть
 {
-
     QString path = QApplication::applicationDirPath();  //QDir::currentPath();      //текущая директория
 
     QString fileName = QFileDialog::getOpenFileName(this, "Выберите входной файл", path);
@@ -28,37 +27,26 @@ void MainWindow::on_pushButtonOpen_clicked()    //открыть
 
 void MainWindow::on_pushButtonJpg_clicked()
 {
-
-    Ic.Save(Ic.img, "jpg");
-
     QString path = QDir::currentPath();  //QDir::currentPath();      //текущая директория
     QString file_name = QFileDialog::getSaveFileName(Q_NULLPTR, "Сохранить", path, "(*.jpg)");
-
-            //im->save(file_name);
-    //file_name += ".jpg";
-
-//    QPixmap pix_map = QPixmap::grabWidget(ui->widget);
-//    QPixmap pix_map2 = pix_map.copy(1, 1, 678, 258);
-//    if (!pix_map2.save(file_name)) {
-//        QMessageBox::information(this, "Картинка не была сохранена",
-//                                 "Проверьте правильность названия и типа");
-//    }
+    Ic.Save(Ic.img, file_name);
 }
 
 void MainWindow::on_pushButtonPng_clicked()
 {
-    QString path = QApplication::applicationDirPath();  //QDir::currentPath();      //текущая директория
-    QString file_name = QFileDialog::getSaveFileName(this, "Сохранить", path, "(*.jpg)");
+    QString path = QDir::currentPath();  //QDir::currentPath();      //текущая директория
+    QString file_name = QFileDialog::getSaveFileName(Q_NULLPTR, "Сохранить", path, "(*.png)");
+    Ic.Save(Ic.img, file_name);
 }
 
 void MainWindow::on_pushButtonW_clicked()
 {
-
+    Ic.WidthScaling();
 }
 
 void MainWindow::on_pushButtonH_clicked()
 {
-
+    Ic.HeightScaling();
 }
 
 

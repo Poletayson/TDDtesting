@@ -70,4 +70,4 @@ void Testing::test_HeightScalingErr()     //тестирование масшт�
     QCOMPARE(obj->HeightScaling (), QSize (0, 0));
 }
 
-QTEST_APPLESS_MAIN(Testing)
+//QTEST_APPLESS_MAIN(Testing)

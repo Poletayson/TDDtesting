@@ -26,7 +26,6 @@ private slots:
     void test_HeightScalingErr();
 };
 
-//QTEST_APPLESS_MAIN(Testing)
 
 #endif // TESTING_H
 //#include "testing.moc"
