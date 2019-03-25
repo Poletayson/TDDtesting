@@ -32,18 +32,13 @@ QString ImageConverter::Save (QImage* im, QString f)
 QSize ImageConverter::WidthScaling ()  //приведение высоты к ширине
 {
     //todo
-//    if (n == "2.jpg")
-//        return QSize (640, 640);
-//    else
-        return QSize (1280, 1280);
+    img = new QImage(img->scaled(img->width(), img->width()));
+    return img->size();
 }
 
 QSize ImageConverter::HeightScaling ()  //приведение ширины к высоте
 {
     //todo
-//    if (n == "1.jpg")
-        return QSize (874, 874);
-//    else
-//        return QSize (640, 640);
-
+    img = new QImage(img->scaled(img->height(), img->height()));
+    return img->size();
 }
