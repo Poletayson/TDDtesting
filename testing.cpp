@@ -25,6 +25,12 @@ void Testing::test_Save()               //тестирование сохран�
     QCOMPARE(obj->Save (ptr, "png"), "png");
 }
 
+void Testing::test_SaveErr()               //тестирование сохранения файла
+{
+    QImage* ptr = new QImage ("132637.jpg");
+    QCOMPARE(obj->Save (ptr, "jpg"), "");
+}
+
 void Testing::test_WidthScaling ()  //тестирование масштабирования по ширине
 {
     QCOMPARE(obj->WidthScaling ("1.jpg"), QSize (1280, 1280));
