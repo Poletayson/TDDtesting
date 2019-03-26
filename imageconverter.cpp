@@ -20,11 +20,15 @@ QString ImageConverter::Open (QString n)
 
 QString ImageConverter::Save (QImage* im, QString f)
 {
-    if (!im->isNull())
+    if (im != Q_NULLPTR)
     {
-        im->save(f);
-        QStringList ptrL = f.split(".");
-        return ptrL.last();
+        if (!im->isNull())
+        {
+            im->save(f);
+            QStringList ptrL = f.split(".");
+            return ptrL.last();
+        }
+        else return "";
     }
     else return "";
 }
