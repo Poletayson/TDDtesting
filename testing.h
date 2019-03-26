@@ -25,6 +25,8 @@ private slots:
     void test_HeightScaling2 ();
     void test_WidthScalingErr ();
     void test_HeightScalingErr();
+    void test_WidthScalingNull ();
+    void test_HeightScalingNull();
 };
 
 

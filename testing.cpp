@@ -77,4 +77,15 @@ void Testing::test_HeightScalingErr()     //тестирование масшт�
     QCOMPARE(obj->HeightScaling (), QSize (0, 0));
 }
 
+void Testing::test_WidthScalingNull()   //тестирование масштабирования по ширине
+{
+    obj->img = Q_NULLPTR;
+    QCOMPARE(obj->WidthScaling (), QSize (0, 0));
+}
+
+void Testing::test_HeightScalingNull()     //тестирование масштабирования по высоте. Ширина становится равной высоте
+{
+    obj->img = Q_NULLPTR;
+    QCOMPARE(obj->HeightScaling (), QSize (0, 0));
+}
 
