@@ -35,8 +35,13 @@ QString ImageConverter::Save (QImage* im, QString f)
 
 QSize ImageConverter::WidthScaling ()  //приведение высоты к ширине
 {
-    img = new QImage(img->scaled(img->width(), img->width()));
-    return img->size();
+    if (img != Q_NULLPTR)
+    {
+        img = new QImage(img->scaled(img->width(), img->width()));
+        return img->size();
+    }
+    else
+        return QSize (0, 0);
 }
 
 QSize ImageConverter::HeightScaling ()  //приведение ширины к высоте
