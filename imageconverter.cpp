@@ -46,6 +46,11 @@ QSize ImageConverter::WidthScaling ()  //приведение высоты к ш
 
 QSize ImageConverter::HeightScaling ()  //приведение ширины к высоте
 {
-    img = new QImage(img->scaled(img->height(), img->height()));
-    return img->size();
+    if (img != Q_NULLPTR)
+    {
+        img = new QImage(img->scaled(img->height(), img->height()));
+        return img->size();
+    }
+    else
+        return QSize (0, 0);
 }
