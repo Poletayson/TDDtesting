@@ -34,6 +34,13 @@ void Testing::test_SaveErr()               //тестирование сохра
     QCOMPARE(obj->Save (ptr, path+"/tst.jpg"), "");
 }
 
+void Testing::test_SaveNull ()
+{
+    QImage* ptr = Q_NULLPTR;
+    QString path = QDir::currentPath();     //текущая директория
+    QCOMPARE(obj->Save (ptr, path+"/tst.jpg"), "");
+}
+
 void Testing::test_WidthScaling ()  //тестирование масштабирования по ширине
 {
     obj->img = new QImage ("1.jpg");
@@ -70,4 +77,4 @@ void Testing::test_HeightScalingErr()     //тестирование масшт�
     QCOMPARE(obj->HeightScaling (), QSize (0, 0));
 }
 
-//QTEST_APPLESS_MAIN(Testing)
+
